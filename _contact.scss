@@ -1,0 +1,49 @@
+.contact {
+  height: 665px;
+  &__container {
+    height: 100%;
+    width: 40%;
+    margin-top: 200px;
+  }
+
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 0px;
+    border-bottom: 2px solid $darkGrey;
+    box-sizing: border-box;
+  }
+  input:focus {
+    outline: none;
+  }
+
+  .form__button {
+    background-color: $lightGreen;
+    padding: 18px 40px 18px 40px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .form__button:hover {
+    background-color: $darkBlack;
+    color: $lightGreen;
+  }
+  .contact__button {
+    margin-top: 50px;
+  }
+
+  &__heading {
+    font-size: 20px;
+    color: $lightGreen;
+    h2 {
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
+  }
+}

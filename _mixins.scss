@@ -1,0 +1,123 @@
+@media (min-width: 64em) {
+  // desktop
+  .about {
+    #about__me {
+      font-size: 24px;
+    }
+    #about__bio {
+      font-size: 36px;
+    }
+  }
+  .services {
+    height: 1236px;
+
+    &__container {
+      width: 1440px;
+      height: 500px;
+      background-color: #fff;
+      display: grid;
+      grid-row: auto auto;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      grid-template-columns: 720px 720px;
+    }
+  }
+  .footer {
+    height: 400px;
+    padding: 100px 300px 100px 300px;
+  }
+}
+
+@media (max-width: 64em) {
+  // mobile
+  .about {
+    #about__me {
+      font-size: 24px;
+    }
+
+    #about__bio {
+      font-size: 18px;
+    }
+  }
+  .services {
+    height: 2300px;
+    &__container {
+      width: 375px;
+      height: 1000px;
+      background-color: #fff;
+      display: grid;
+      grid-row: auto auto;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      grid-template-columns: 375px;
+    }
+
+    .webDesign,
+    .whyChoose,
+    .benefits,
+    .caseStudies {
+      width: 375px;
+    }
+
+    .whyChoose,
+    .benefits {
+      h2 {
+        font-size: 20px;
+      }
+      li {
+        font-size: 15px;
+        margin-left: 15px;
+      }
+    }
+  }
+  .contact {
+    &__heading {
+      h2 {
+        font-size: 25px;
+        text-align: center;
+      }
+    }
+  }
+  .footer {
+    &__socials {
+      margin-left: 100px;
+    }
+    text-align: center;
+    padding: 40px;
+    height: 500px;
+    flex-wrap: wrap;
+    &__copyright {
+      h3 {
+        font-weight: 500;
+        text-align: center;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+//640px, 1024px, 1400px
+$breakpoints-up: (
+  "medium": "40em",
+  "large": "63.9376em",
+  "xlarge": "87.5em",
+);
+
+// 639px. 1023px, 1399px
+$breakpoints-down: (
+  "small": "39.93675em",
+  "medium": "63.9375em",
+  "large": "87.4375em",
+);
+
+@mixin breakpoint-up($size) {
+  @media (min-width: map-get($breakpoints-up, $size)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}

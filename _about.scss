@@ -1,0 +1,42 @@
+.about {
+  height: 620px;
+  text-align: center;
+
+  &__container {
+    margin: 0;
+    padding: 0;
+    height: 475px;
+    width: 800px;
+    :not(:last-child) {
+      margin-bottom: 30px;
+    }
+    :nth-child(4) {
+      margin-bottom: 45px;
+    }
+    #about__me {
+      font-weight: 400;
+      color: $lightGreen;
+    }
+
+    #about__bio {
+      font-weight: 600;
+      color: $darkBlack;
+    }
+
+    #about__sub {
+      font-size: 18px;
+      font-weight: 400;
+      color: $darkBlack;
+    }
+
+    #about__slogan {
+      font-size: 18px;
+      font-weight: 600;
+      color: $darkBlack;
+    }
+  }
+  .about__button:hover {
+    background-color: $darkBlack;
+    color: $lightGreen;
+  }
+}

@@ -1,0 +1,52 @@
+.services {
+  width: 100%;
+}
+.webDesign {
+  background: linear-gradient(0deg, rgba(0, 41, 41, 0.5), rgba(0, 41, 41, 0.5)),
+    url(/img/png/sergey-zolkin-_UeY8aTI6d0-unsplash.png);
+  color: #fff;
+  font-size: 48px;
+  text-align: center;
+}
+
+.caseStudies {
+  text-align: center;
+  background: linear-gradient(0deg, rgba(0, 41, 41, 0.5), rgba(0, 41, 41, 0.5)),
+    url(/img/png/charles-deluvio-Lks7vei-eAg-unsplash.png);
+  color: #fff;
+  font-size: 48px;
+}
+
+.whyChoose {
+  background-color: $lightGrey;
+  h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: $lightGreen;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  li {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 3;
+    list-style: none;
+  }
+}
+
+.benefits {
+  background-color: $lightGrey;
+  h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: $lightGreen;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  li {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 3;
+    list-style: none;
+  }
+}
